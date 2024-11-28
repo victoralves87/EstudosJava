@@ -1,0 +1,18 @@
+package softex.exercicios;
+
+import java.util.Scanner;
+
+public class Tabuada {
+    public static void main(String[] args) {
+        int valor;
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("digite o numero que você quer para gerar a tabuada:");
+        valor = teclado.nextInt();
+
+        for (int i=0;i<11;i++){
+            System.out.println(valor + "X" + i + " =" + (valor*i));
+        }
+    }
+}
