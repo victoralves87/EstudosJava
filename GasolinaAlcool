@@ -1,0 +1,22 @@
+    package softex.exercicios;
+
+    import java.util.Scanner;
+
+    public class GasolinaAlcool {
+        public static void main(String[] args) {
+            Double gasolina, alcool;
+            Scanner scan = new Scanner(System.in);
+
+            System.out.println("qual a melhor opção: Gasolina x Alcool");
+            System.out.println("digite o valor do litro da gasolina:");
+            gasolina = scan.nextDouble();
+            System.out.println("digite o valor do litro do Alcool:");
+            alcool = scan.nextDouble();
+
+            if (alcool < 0.7 * gasolina){
+                System.out.println("abasteça com Alcool!");
+            }else {
+                System.out.println("melhor abastecer com gasolina!");
+            }
+        }
+    }
